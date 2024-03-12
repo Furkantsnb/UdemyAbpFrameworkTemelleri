@@ -11,7 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DenemeApp.Domain\DenemeApp.Domain.csproj" />
     <ProjectReference Include="..\DenemeApp.Application.Contracts\DenemeApp.Application.Contracts.csproj" />
-  </ItemGroup>
+  <ProjectReference Include="..\..\modules\DenemeModule\src\DenemeModule.Application\DenemeModule.Application.csproj" /></ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Account.Application" Version="8.0.4" />
@@ -20,6 +20,8 @@
     <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="8.0.4" />
     <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="8.0.4" />
     <PackageReference Include="Volo.Abp.SettingManagement.Application" Version="8.0.4" />
+    <ProjectReference Include="..\..\modules\Volo.Blogging\src\Volo.Blogging.Admin.Application\Volo.Blogging.Admin.Application.csproj" />
+    <ProjectReference Include="..\..\modules\Volo.Blogging\src\Volo.Blogging.Application\Volo.Blogging.Application.csproj" />
   </ItemGroup>
 
 </Project>

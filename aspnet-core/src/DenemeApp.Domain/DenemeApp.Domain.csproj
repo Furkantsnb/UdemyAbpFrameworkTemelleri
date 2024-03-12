@@ -10,9 +10,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DenemeApp.Domain.Shared\DenemeApp.Domain.Shared.csproj" />
-  </ItemGroup>
+  <ProjectReference Include="..\..\modules\DenemeModule\src\DenemeModule.Domain\DenemeModule.Domain.csproj" /></ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Volo.Abp.Caching.StackExchangeRedis" Version="8.0.4" />
     <PackageReference Include="Volo.Abp.Emailing" Version="8.0.4" />
     <PackageReference Include="Volo.Abp.Identity.Domain" Version="8.0.4" />
     <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Identity" Version="8.0.4" />
@@ -23,6 +24,7 @@
     <PackageReference Include="Volo.Abp.SettingManagement.Domain" Version="8.0.4" />
     <PackageReference Include="Volo.Abp.OpenIddict.Domain" Version="8.0.4" />
     <PackageReference Include="Volo.Abp.PermissionManagement.Domain.OpenIddict" Version="8.0.4" />
+    <ProjectReference Include="..\..\modules\Volo.Blogging\src\Volo.Blogging.Domain\Volo.Blogging.Domain.csproj" />
   </ItemGroup>
 
 </Project>

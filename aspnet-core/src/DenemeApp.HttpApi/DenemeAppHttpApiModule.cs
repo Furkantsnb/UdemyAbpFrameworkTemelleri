@@ -1,4 +1,4 @@
-﻿using Localization.Resources.AbpUi;
+using Localization.Resources.AbpUi;
 using DenemeApp.Localization;
 using Volo.Abp.Account;
 using Volo.Abp.FeatureManagement;
@@ -8,6 +8,9 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement.HttpApi;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
+using Volo.Blogging;
+using Volo.Blogging.Admin;
+using DenemeModule;
 
 namespace DenemeApp;
 
@@ -20,7 +23,10 @@ namespace DenemeApp;
     typeof(AbpFeatureManagementHttpApiModule),
     typeof(AbpSettingManagementHttpApiModule)
     )]
-public class DenemeAppHttpApiModule : AbpModule
+[DependsOn(typeof(BloggingHttpApiModule))]
+    [DependsOn(typeof(BloggingAdminHttpApiModule))]
+    [DependsOn(typeof(DenemeModuleHttpApiModule))]
+    public class DenemeAppHttpApiModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {

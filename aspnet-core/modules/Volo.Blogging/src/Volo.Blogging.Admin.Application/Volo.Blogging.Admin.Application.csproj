@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    
+    
+
+    <PropertyGroup><LangVersion>latest</LangVersion>
+        <TargetFramework>net8.0</TargetFramework>
+        <AssemblyName>Volo.Blogging.Admin.Application</AssemblyName>
+        <PackageId>Volo.Blogging.Admin.Application</PackageId>
+        <RootNamespace />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="SixLabors.ImageSharp" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <ProjectReference Include="..\Volo.Blogging.Admin.Application.Contracts\Volo.Blogging.Admin.Application.Contracts.csproj" />
+        <ProjectReference Include="..\Volo.Blogging.Domain\Volo.Blogging.Domain.csproj" />
+        <PackageReference Include="Volo.Abp.AutoMapper" VersionOverride="8.0.4" />
+        <PackageReference Include="Volo.Abp.Caching" VersionOverride="8.0.4" />
+        <PackageReference Include="Volo.Abp.Ddd.Application" VersionOverride="8.0.4" />
+    </ItemGroup>
+</Project>

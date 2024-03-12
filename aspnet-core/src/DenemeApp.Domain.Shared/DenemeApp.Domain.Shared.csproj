@@ -18,7 +18,8 @@
     <PackageReference Include="Volo.Abp.PermissionManagement.Domain.Shared" Version="8.0.4" />
     <PackageReference Include="Volo.Abp.SettingManagement.Domain.Shared" Version="8.0.4" />
     <PackageReference Include="Volo.Abp.OpenIddict.Domain.Shared" Version="8.0.4" />
-  </ItemGroup>
+    <ProjectReference Include="..\..\modules\Volo.Blogging\src\Volo.Blogging.Domain.Shared\Volo.Blogging.Domain.Shared.csproj" />
+  <ProjectReference Include="..\..\modules\DenemeModule\src\DenemeModule.Domain.Shared\DenemeModule.Domain.Shared.csproj" /></ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Localization\DenemeApp\*.json" />

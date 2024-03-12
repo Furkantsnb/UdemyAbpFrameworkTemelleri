@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using DenemeApp.MultiTenancy;
 using Volo.Abp.AuditLogging;
@@ -14,6 +14,9 @@ using Volo.Abp.PermissionManagement.Identity;
 using Volo.Abp.PermissionManagement.OpenIddict;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
+using Volo.Abp.Caching.StackExchangeRedis;
+using Volo.Blogging;
+using DenemeModule;
 
 namespace DenemeApp;
 
@@ -30,7 +33,10 @@ namespace DenemeApp;
     typeof(AbpTenantManagementDomainModule),
     typeof(AbpEmailingModule)
 )]
-public class DenemeAppDomainModule : AbpModule
+[DependsOn(typeof(AbpCachingStackExchangeRedisModule))]
+    [DependsOn(typeof(BloggingDomainModule))]
+    [DependsOn(typeof(DenemeModuleDomainModule))]
+    public class DenemeAppDomainModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {

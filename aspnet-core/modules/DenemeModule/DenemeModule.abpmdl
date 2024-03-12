@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "DenemeModule.Domain.Shared": {
+      "path": "src/DenemeModule.Domain.Shared/DenemeModule.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.Domain": {
+      "path": "src/DenemeModule.Domain/DenemeModule.Domain.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.Application.Contracts": {
+      "path": "src/DenemeModule.Application.Contracts/DenemeModule.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.Application": {
+      "path": "src/DenemeModule.Application/DenemeModule.Application.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.EntityFrameworkCore": {
+      "path": "src/DenemeModule.EntityFrameworkCore/DenemeModule.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.MongoDB": {
+      "path": "src/DenemeModule.MongoDB/DenemeModule.MongoDB.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.HttpApi": {
+      "path": "src/DenemeModule.HttpApi/DenemeModule.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.HttpApi.Client": {
+      "path": "src/DenemeModule.HttpApi.Client/DenemeModule.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.TestBase": {
+      "path": "test/DenemeModule.TestBase/DenemeModule.TestBase.abppkg",
+      "folder": "test"
+    },
+    "DenemeModule.EntityFrameworkCore.Tests": {
+      "path": "test/DenemeModule.EntityFrameworkCore.Tests/DenemeModule.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "DenemeModule.MongoDB.Tests": {
+      "path": "test/DenemeModule.MongoDB.Tests/DenemeModule.MongoDB.Tests.abppkg",
+      "folder": "test"
+    },
+    "DenemeModule.Domain.Tests": {
+      "path": "test/DenemeModule.Domain.Tests/DenemeModule.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "DenemeModule.Application.Tests": {
+      "path": "test/DenemeModule.Application.Tests/DenemeModule.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "DenemeModule.HttpApi.Host": {
+      "path": "host/DenemeModule.HttpApi.Host/DenemeModule.HttpApi.Host.abppkg",
+      "folder": "host"
+    },
+    "DenemeModule.Web": {
+      "path": "src/DenemeModule.Web/DenemeModule.Web.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/DenemeModule.HttpApi.Client.ConsoleTestApp/DenemeModule.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "DenemeModule.Web.Host": {
+      "path": "host/DenemeModule.Web.Host/DenemeModule.Web.Host.abppkg",
+      "folder": "host"
+    },
+    "DenemeModule.AuthServer": {
+      "path": "host/DenemeModule.AuthServer/DenemeModule.AuthServer.abppkg",
+      "folder": "host"
+    },
+    "DenemeModule.Host.Shared": {
+      "path": "host/DenemeModule.Host.Shared/DenemeModule.Host.Shared.abppkg",
+      "folder": "host"
+    },
+    "DenemeModule.Web.Unified": {
+      "path": "host/DenemeModule.Web.Unified/DenemeModule.Web.Unified.abppkg",
+      "folder": "host"
+    },
+    "DenemeModule.Blazor": {
+      "path": "src/DenemeModule.Blazor/DenemeModule.Blazor.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.Blazor.Host": {
+      "path": "host/DenemeModule.Blazor.Host/DenemeModule.Blazor.Host.abppkg",
+      "folder": "host"
+    },
+    "DenemeModule.Blazor.Server": {
+      "path": "src/DenemeModule.Blazor.Server/DenemeModule.Blazor.Server.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.Blazor.WebAssembly": {
+      "path": "src/DenemeModule.Blazor.WebAssembly/DenemeModule.Blazor.WebAssembly.abppkg",
+      "folder": "src"
+    },
+    "DenemeModule.Blazor.Server.Host": {
+      "path": "host/DenemeModule.Blazor.Server.Host/DenemeModule.Blazor.Server.Host.abppkg",
+      "folder": "host"
+    }
+  }
+}

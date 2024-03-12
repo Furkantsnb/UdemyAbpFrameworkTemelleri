@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "DenemeModule": {
+      "path": "DenemeModule.abpmdl"
+    }
+  }
+}

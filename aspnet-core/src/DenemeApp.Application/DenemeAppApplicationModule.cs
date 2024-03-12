@@ -1,4 +1,4 @@
-﻿using Volo.Abp.Account;
+using Volo.Abp.Account;
 using Volo.Abp.AutoMapper;
 using Volo.Abp.FeatureManagement;
 using Volo.Abp.Identity;
@@ -6,6 +6,9 @@ using Volo.Abp.Modularity;
 using Volo.Abp.PermissionManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
+using Volo.Blogging;
+using Volo.Blogging.Admin;
+using DenemeModule;
 
 namespace DenemeApp;
 
@@ -19,7 +22,10 @@ namespace DenemeApp;
     typeof(AbpFeatureManagementApplicationModule),
     typeof(AbpSettingManagementApplicationModule)
     )]
-public class DenemeAppApplicationModule : AbpModule
+[DependsOn(typeof(BloggingApplicationModule))]
+    [DependsOn(typeof(BloggingAdminApplicationModule))]
+    [DependsOn(typeof(DenemeModuleApplicationModule))]
+    public class DenemeAppApplicationModule : AbpModule
 {
     public override void ConfigureServices(ServiceConfigurationContext context)
     {

@@ -1,4 +1,4 @@
-﻿using DenemeApp.Localization;
+using DenemeApp.Localization;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.BackgroundJobs;
 using Volo.Abp.FeatureManagement;
@@ -12,6 +12,8 @@ using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.Validation.Localization;
 using Volo.Abp.VirtualFileSystem;
+using Volo.Blogging;
+using DenemeModule;
 
 namespace DenemeApp;
 
@@ -25,7 +27,9 @@ namespace DenemeApp;
     typeof(AbpSettingManagementDomainSharedModule),
     typeof(AbpTenantManagementDomainSharedModule)    
     )]
-public class DenemeAppDomainSharedModule : AbpModule
+[DependsOn(typeof(BloggingDomainSharedModule))]
+    [DependsOn(typeof(DenemeModuleDomainSharedModule))]
+    public class DenemeAppDomainSharedModule : AbpModule
 {
     public override void PreConfigureServices(ServiceConfigurationContext context)
     {

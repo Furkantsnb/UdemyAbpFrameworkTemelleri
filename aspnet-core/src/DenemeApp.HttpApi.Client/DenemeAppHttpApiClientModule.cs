@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Account;
 using Volo.Abp.FeatureManagement;
 using Volo.Abp.Identity;
@@ -7,6 +7,9 @@ using Volo.Abp.PermissionManagement;
 using Volo.Abp.TenantManagement;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.VirtualFileSystem;
+using Volo.Blogging;
+using Volo.Blogging.Admin;
+using DenemeModule;
 
 namespace DenemeApp;
 
@@ -19,7 +22,10 @@ namespace DenemeApp;
     typeof(AbpFeatureManagementHttpApiClientModule),
     typeof(AbpSettingManagementHttpApiClientModule)
 )]
-public class DenemeAppHttpApiClientModule : AbpModule
+[DependsOn(typeof(BloggingHttpApiClientModule))]
+    [DependsOn(typeof(BloggingAdminHttpApiClientModule))]
+    [DependsOn(typeof(DenemeModuleHttpApiClientModule))]
+    public class DenemeAppHttpApiClientModule : AbpModule
 {
     public const string RemoteServiceName = "Default";
 
